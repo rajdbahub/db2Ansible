@@ -10,3 +10,8 @@
      shell: id -a
      register: iddet
    - debug: msg="{{iddet.stdout}}"
+   
+   - name: Display machine name
+     shell: hostname
+     register: macdet
+   - debug: msg="{{macdet.stdout}}"
