@@ -1,3 +1,4 @@
 ---
 - name: DB2 database List
+  hosts: all
   command: db2 list db directory
