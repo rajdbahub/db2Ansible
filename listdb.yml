@@ -1,4 +1,4 @@
  - name: add ansible user
    hosts: rajoo-ubuntu
- - tasks:
+   tasks:
    shell: hostname
