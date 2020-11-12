@@ -1,0 +1,3 @@
+---
+- name: DB2 database List
+  command: db2 list db directory
