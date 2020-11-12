@@ -1,3 +1,6 @@
  - name: add ansible user
-   hosts: rajoo-ubuntu
-   debug: db2ilist
+   hosts: rajoo-ub
+   tasks:
+   - name: db2ilist
+     - debug:
+       msg: uname -v
