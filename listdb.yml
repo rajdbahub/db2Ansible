@@ -3,4 +3,4 @@
    tasks:
    - name: db2ilist
      shell: uname -v
-     register: var=uname.stdout_lines
+     register: var
