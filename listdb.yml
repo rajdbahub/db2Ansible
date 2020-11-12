@@ -1,2 +1,2 @@
-- name: DB2 database List
-  shell: db2 list db directory
+ - name: add ansible user
+   hosts: all
