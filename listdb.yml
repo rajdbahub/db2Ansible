@@ -1,5 +1,5 @@
  - name: add ansible user
-   hosts: rajoo-ub
+   hosts: rajoo-ubuntu
    tasks:
    - name: db2ilist
      shell: uname -v
