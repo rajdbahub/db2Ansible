@@ -6,7 +6,7 @@
      register: var
    - debug: msg="{{var.stdout}}"
 
-   - name: change directory
-     shell: cd /opt/ibm/db2/V11.1;pwd
-     register: db2loc
-   - debug: msg="{{db2loc.stdout}}"
+   - name: Display user
+     shell: id -a
+     register: iddet
+   - debug: msg="{{iddet.stdout}}"
