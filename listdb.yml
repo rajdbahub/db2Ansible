@@ -4,3 +4,4 @@
    - name: db2ilist
      shell: uname -v
      register: var
+   - debug: msg="{{var.stdout}}"
