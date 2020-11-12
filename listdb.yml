@@ -7,6 +7,6 @@
    - debug: msg="{{var.stdout}}"
 
    - name: DB2 Instance detail
-     shell: /opt/ibm/db2/V11.1/bin/db2ilist
+     shell: db2ilist
      register: inst
    - debug: msg="{{inst.stdout}}"
