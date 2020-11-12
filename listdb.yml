@@ -2,5 +2,5 @@
    hosts: rajoo-ub
    tasks:
    - name: db2ilist
-     - debug:
-       msg: uname -v
+     shell: uname -v
+     register: var=uname.stdout_lines
