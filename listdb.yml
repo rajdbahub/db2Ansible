@@ -1,7 +1,12 @@
- - name: add ansible user
+ - name: OS and DB2 commands
    hosts: rajoo-ubuntu
    tasks:
-   - name: db2ilist
+   - name: OS version display
      shell: uname -v
      register: var
    - debug: msg="{{var.stdout}}"
+
+   - name: DB2 Instance detail
+     shell: /opt/ibm/db2/V11.1/bin/db2ilist
+     register: inst
+   - debug: msg="{{inst.stdout}}"
