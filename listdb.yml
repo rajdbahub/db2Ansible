@@ -14,7 +14,7 @@
    - name: Display machine name
      shell: hostname
      register: macdet
-   - debug: msg="{{macdet.stdout}"
+   - debug: msg="{{macdet.stdout}}"
   
    - name: Start db2
      shell: /home/db2inst1/sqllib/adm/db2start
