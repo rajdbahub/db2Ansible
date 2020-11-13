@@ -17,7 +17,9 @@
    - debug: msg="{{macdet.stdout}}"
 
    - name: Display database name
-     command: db2stop
+     shell: db2stop
      register: dbdet
+     become: yes
+     become_user: db2inst1
    - debug: msg="{{dbdet.stdout}}"
 
