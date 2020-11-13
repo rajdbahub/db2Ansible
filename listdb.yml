@@ -19,6 +19,5 @@
    - name: Display database name
      shell: '. /home/db2inst1/.bashrc && db2 connect to sample'
      executable: /bin/bash
-     become: yes
-     become_user: db2inst1
-
+     args:
+       executable: /bin/bash
