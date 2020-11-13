@@ -17,7 +17,7 @@
    - debug: msg="{{macdet.stdout}}"
   
    - name: Start db2
-     shell: '. /home/db2inst1/sqllib/db2profile; /home/db2inst1/sqllib/bin/db2'
+     shell: '. /home/db2inst1/sqllib/db2profile; /home/db2inst1/sqllib/bin/db2 list command options'
      args:
        executable: /bin/bash
        
