@@ -17,10 +17,9 @@
    - debug: msg="{{macdet.stdout}}"
   
    - name: Start db2
-     shell: '. /home/db2inst1/sqllib/db2profile && /home/db2inst1/sqllib/bin/db2 get dbm cfg'
+     shell: '. /home/db2inst1/sqllib/db2profile; /home/db2inst1/sqllib/bin/db2 get dbm cfg'
      args:
        executable: /bin/bash
-     become: yes
        
    - name: List db details
      shell: /home/db2inst1/sqllib/bin/db2 list db directory
