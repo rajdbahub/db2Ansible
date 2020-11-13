@@ -30,15 +30,15 @@
      register: dbmdet
    - debug: msg="{{dbmdet.stdout}}"
        
-   #- name: List db details
-    # shell: /home/db2inst1/sqllib/bin/db2 list db directory
-     #args:
-      # executable: /bin/bash
-     #register: listdbdet
-   #- debug: msg="{{listdbdet.stdout}}"
+   - name: List db details
+     shell: '. /home/db2inst1/sqllib/db2profile; /home/db2inst1/sqllib/bin/db2 list db directory'
+     args:
+       executable: /bin/bash
+     register: listdbdet
+   - debug: msg="{{listdbdet.stdout}}"
        
    - name: connect to database
-     shell: /home/db2inst1/sqllib/bin/db2 connect to sample
+     shell: '. /home/db2inst1/sqllib/db2profile; /home/db2inst1/sqllib/bin/db2 connect to sample'
      args:
        executable: /bin/bash
      register: conndet
