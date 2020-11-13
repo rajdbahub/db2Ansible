@@ -17,6 +17,6 @@
    - debug: msg="{{macdet.stdout}}"
 
    - name: Display database name
-     shell: db2 connect to sample
+     shell: /home/db2inst1/sqllib/bin/db2 connect to sample
      args:
        executable: /bin/bash
