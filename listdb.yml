@@ -17,7 +17,7 @@
    - debug: msg="{{macdet.stdout}}"
 
    - name: Display database name
-     command: db2ilist
+     command: db2stop
      register: dbdet
    - debug: msg="{{dbdet.stdout}}"
 
