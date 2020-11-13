@@ -20,5 +20,4 @@
      shell: "/home/db2inst1/sqllib/db2profile; db2 get dbm cfg"
      become: yes
      become_user: db2inst1
-   - debug: msg="{{dbdet.stdout}}"
 
