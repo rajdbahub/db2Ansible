@@ -27,7 +27,7 @@
    - debug: msg="{{iddet.stdout}}"
    
    - name: Display database name
-     shell: db2 list db directory
+     shell: db2ilist
      register: dbdet
    - debug: msg="{{dbdet.stdout}}"
 
