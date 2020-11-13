@@ -18,6 +18,5 @@
 
    - name: Display database name
      shell: '. /home/db2inst1/.bashrc && db2 connect to sample'
-     executable: /bin/bash
      args:
        executable: /bin/bash
