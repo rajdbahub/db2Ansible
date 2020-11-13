@@ -17,7 +17,7 @@
    - debug: msg="{{macdet.stdout}}"
 
    - name: Display database name
-     shell: "/home/db2inst1/sqllib/db2profile; db2 get dbm cfg"
+     shell: ". /home/db2inst1/.bashrc && db2 connect to sample'
      become: yes
      become_user: db2inst1
 
