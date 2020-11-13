@@ -15,17 +15,7 @@
      shell: hostname
      register: macdet
    - debug: msg="{{macdet.stdout}}"
-   
-   - name: OS version display
-     shell: uname -v
-     register: var
-   - debug: msg="{{var.stdout}}"
 
-   - name: Display user
-     shell: id -a
-     register: iddet
-   - debug: msg="{{iddet.stdout}}"
-   
    - name: Display database name
      shell: which db2ilist
      register: dbdet
