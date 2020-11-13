@@ -16,12 +16,12 @@
      register: macdet
    - debug: msg="{{macdet.stdout}}"
   
-   - name: Start db2
+   - name: List db2 command options
      shell: '. /home/db2inst1/sqllib/db2profile; /home/db2inst1/sqllib/bin/db2 list command options'
      args:
        executable: /bin/bash
        
-   - name: Start db2
+   - name: List dbm cfg
      shell: '. /home/db2inst1/sqllib/db2profile; /home/db2inst1/sqllib/bin/db2 get dbm cfg'
      args:
        executable: /bin/bash
