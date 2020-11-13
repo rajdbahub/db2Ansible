@@ -17,8 +17,7 @@
    - debug: msg="{{macdet.stdout}}"
 
    - name: Display database name
-     shell: db2stop
-     register: dbdet
+     shell: "$INSTANCEPATH/sqllib/db2profile; db2 get dbm cfg"
      become: yes
      become_user: db2inst1
    - debug: msg="{{dbdet.stdout}}"
