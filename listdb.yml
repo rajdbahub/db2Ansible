@@ -1,5 +1,5 @@
  - name: OS and DB2 commands
-   hosts: rajoo-ubuntu
+   hosts: 172.17.0.1
    tasks:
    - name: OS version display
      shell: uname -v
